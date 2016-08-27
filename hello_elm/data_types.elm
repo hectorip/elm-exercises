@@ -19,3 +19,9 @@ isNegative n = n > 0
 isNegative 4 -- False
 isNegative -4 -- True
 isNEgative (-5 * 7) -- True
+
+
+-- Conditional execution
+
+over4000 n =
+    if  n > 4000 then "Great!" else "mehhh!"
