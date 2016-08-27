@@ -36,3 +36,14 @@ List.isEmpty japanese_numbers
 duplicate_string n = n ++ n
 List.map duplicate_string japanese_numbers
 List.reverse japanese_numbers
+
+
+
+-- Tuples
+import String
+
+goodName name =
+    if String.length name <= 20
+        (True, "This is a good name!")
+    else
+        (False, "NAme too long!")
