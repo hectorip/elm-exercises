@@ -32,3 +32,7 @@ over4000 n =
 
 japanese_numbers = ["ich", "ni", "san"]
 
+List.isEmpty japanese_numbers
+duplicate_string n = n ++ n
+List.map duplicate_string japanese_numbers
+List.reverse japanese_numbers
