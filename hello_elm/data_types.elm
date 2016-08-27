@@ -22,6 +22,13 @@ isNEgative (-5 * 7) -- True
 
 
 -- Conditional execution
-
+-- Ther is no concept of truthiness in Elm, conditions must be real booleans
 over4000 n =
     if  n > 4000 then "Great!" else "mehhh!"
+
+
+-- Lists
+-- List must hold elements of the same type
+
+japanese_numbers = ["ich", "ni", "san"]
+
