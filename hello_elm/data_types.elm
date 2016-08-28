@@ -46,4 +46,19 @@ goodName name =
     if String.length name <= 20
         (True, "This is a good name!")
     else
-        (False, "NAme too long!")
+        (False, "Name too long!")
+
+-- Records - like Objects
+
+me = { name = "Héctor", last_name = "Patricio", age = 27}
+-- accessing properties
+me.name
+me.last_name
+me.age
+
+-- Function!
+.name me
+.last_name me
+.age me
+
+List.map .age [me, me]
