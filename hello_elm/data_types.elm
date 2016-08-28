@@ -62,3 +62,12 @@ me.age
 .age me
 
 List.map .age [me, me]
+
+-- Pattern Matching
+
+under30 {age} = age < 30
+under30 me
+
+-- updating records
+
+{me | name = "Iván"}  -- This creates a new record is not a destructive update
