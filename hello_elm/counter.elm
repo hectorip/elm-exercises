@@ -16,7 +16,7 @@ update msg model =
       model - 1
 
     Reset ->
-      model = 0
+      0
 
 view model =
   div []
