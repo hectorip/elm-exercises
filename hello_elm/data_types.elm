@@ -2,7 +2,7 @@
 
 "Hello " ++ "World" -- Concatenation
 
-# Functions
+-- Functions
 
 isNegative n = n > 0
 
