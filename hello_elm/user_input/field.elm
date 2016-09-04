@@ -14,7 +14,18 @@ update (NewContent content) oldContent =
 
 view content =
     div []
-    [ input [ placeholder "Text to transform", onInput NewContent] []
-    , div [ ] [ text (String.reverse content)]
+    [ input [ placeholder "Text to transform", onInput NewContent, myStyle ] []
+    , div [ myStyle ] [ text (String.reverse content)]
     ]
+
+myStyle =
+    style
+        [ ("width", "100%")
+        , ("height", "50px")
+        , ("padding", "10px 0")
+        , ("font-size", "2em")
+        , ("text-align", "center")
+        , ("color", "red")
+        , ("font-family", "sans-serif")
+        ]
 
