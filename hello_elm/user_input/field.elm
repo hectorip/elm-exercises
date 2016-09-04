@@ -14,7 +14,7 @@ update (NewContent content) oldContent =
 
 view content =
     div []
-    [ input [ placeholder = "Text to transform", onInput NewContent] []
+    [ input [ placeholder "Text to transform", onInput NewContent] []
     , div [ ] [ text (String.reverse content)]
     ]
 
