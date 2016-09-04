@@ -2,6 +2,24 @@
 
 "Hello " ++ "World" -- Concatenation
 
+-- Chars
+'b'
+'c'
+
+-- multi-line String
+"""
+HEREDOCSS!!!!
+"""
+
+-- Number (Entero o flotante, dependiendo del uso)
+455656
+
+-- Float
+45.6
+
+-- Boolean
+True
+False
 -- Functions
 
 isNegative n = n > 0
