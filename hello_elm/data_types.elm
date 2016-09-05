@@ -98,3 +98,10 @@ under30 me
 -- Conditionals
 
 if True then "Something" else "another thing"
+
+if True then
+    "something"
+else if False then
+    "Another thing"
+else
+    "Lastly"
