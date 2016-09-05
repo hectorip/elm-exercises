@@ -99,9 +99,17 @@ under30 me
 
 if True then "Something" else "another thing"
 
-if True then
+if 1 == 2 then
     "something"
-else if False then
+else if 1 == 1 then
     "Another thing"
 else
     "Lastly"
+
+n = 7
+
+-- Case -> Sensible a indentación
+case n of
+    0 -> "Zero"
+    7 -> "Seven"
+    _ -> "Another"
