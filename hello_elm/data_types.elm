@@ -20,9 +20,6 @@ HEREDOCSS!!!!
 -- Boolean
 True
 False
--- Functions
-
-isNegative n = n > 0
 
 -- Arrithmetic
 
@@ -31,6 +28,12 @@ isNegative n = n > 0
 5 - 6
 5 / 6 -- Floating point division
 5 // 6 -- Integer division
+
+
+-- Functions
+
+isNegative n = n > 0
+
 
 -- Invoking functions
 
@@ -68,7 +71,8 @@ goodName name =
 
 -- Records - like Objects
 
-me = { name = "Héctor", last_name = "Patricio", age = 27}
+me = { name = "Héctor", last_name = "Patricio", age = 27 }
+
 -- accessing properties
 me.name
 me.last_name
@@ -79,13 +83,18 @@ me.age
 .last_name me
 .age me
 
-List.map .age [me, me]
+List.map .age [ me, me ]
 
 -- Pattern Matching
 
-under30 {age} = age < 30
+under30 { age } = age < 30
 under30 me
 
 -- updating records
 
-{me | name = "Iván"}  -- This creates a new record is not a destructive update
+{ me | name = "Iván" }  -- This creates a new record is not a destructive update
+
+
+-- Conditionals
+
+if True then "Something" else "another thing"
