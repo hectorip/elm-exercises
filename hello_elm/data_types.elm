@@ -85,17 +85,17 @@ me.age
 
 List.map .age [ me, me ]
 
--- Pattern Matching
+-- Patrones
 
 under30 { age } = age < 30
 under30 me
 
--- updating records
+-- actualizando records
 
-{ me | name = "Iván" }  -- This creates a new record is not a destructive update
+{ me | name = "Iván" }  -- crea un nuevo Record con un campo actualizado, no sustituye el anterior
 
 
--- Conditionals
+-- Condicionales
 
 if True then "Something" else "another thing"
 
